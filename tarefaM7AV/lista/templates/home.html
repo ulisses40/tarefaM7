@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Filmes Favoritos</title>
+</head>
+<body>
+    <h2>Cadastre seus 5 filmes favoritos</h2>
+    <form method="POST">
+        {% csrf_token %}
+
+
+        <label>Filme 1:</label><br>
+        <input type="text" name="filme_1" required><br><br>
+
+        <label>Filme 2:</label><br>
+        <input type="text" name="filme_2" required><br><br>
+
+        <label>Filme 3:</label><br>
+        <input type="text" name="filme_3" required><br><br>
+
+        <label>Filme 4:</label><br>
+        <input type="text" name="filme_4" required><br><br>
+
+        <label>Filme 5:</label><br>
+        <input type="text" name="filme_5" required><br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
